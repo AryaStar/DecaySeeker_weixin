@@ -1,0 +1,33 @@
+/* pages/grant/grant.wxss */
+.bor{
+  background-color: rgba(136, 180, 236, 0.247);
+  width: 600rpx;
+  height: 92rpx;
+  margin-top: 20rpx;
+  border-radius: 98rpx;
+  text-align: center;
+}
+
+.btn1 {
+  width: 600rpx;
+  margin-top: 20rpx;
+  background-color: rgb(126, 184, 243);
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnImg {
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+
+.btn1::after {
+  border-radius: 98rpx;
+  border: 0; 
+}
+

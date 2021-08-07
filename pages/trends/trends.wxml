@@ -1,0 +1,13 @@
+
+<view>
+<modal title="提示" cancel-text="关闭" confirm-text="确定" hidden="{{mHidden}}" bindconfirm="changeModel" bindcancel="modelCancel">不存在该牙齿数据,该患者的{{num1}},{{num2}},{{num3}}号牙齿有数据记录</modal>
+</view>
+
+ <view class="box">
+<view ><Select  prop-array='{{selectArray1}}' bind:myget='getDate1'></Select></view>
+</view>
+
+
+<view class="container">
+<ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+</view>

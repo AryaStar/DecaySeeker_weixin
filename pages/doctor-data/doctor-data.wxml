@@ -1,0 +1,32 @@
+<!--pages/doctor-data/doctor-data.wxml-->
+<view>
+  <view>
+    <view class="divLine"></view>
+    <button class="but" bindtap="getData" data-text="赵小芳"  hover-class='hover'><text>儿童口腔科——赵小芳</text> <text class="kong">></text></button>
+  </view>
+  <view>
+    <view class="divLine"></view>
+    <button class="but" bindtap="getData" data-text="李建国"  hover-class='hover'><text>口腔正畸科——李建国</text> <text class="kong">></text></button>
+  </view>
+  <view>
+    <view class="divLine"></view>
+    <button class="but" bindtap="getData" data-text="吴伟"  hover-class='hover'><text>医疗美容科——吴伟</text> <text class="kong">></text></button>
+  </view>
+  <view>
+    <view class="divLine"></view>
+    <button class="but" bindtap="getData" data-text="李梅"  hover-class='hover'><text>口腔颌面外科——李梅</text> <text class="kong">></text></button>
+  </view>
+  <view>
+    <view class="divLine"></view>
+    <button class="but" bindtap="getData" data-text="王大志"  hover-class='hover'><text>口腔种植科——王大志</text> <text class="kong">></text></button>
+  </view>
+  <view>
+    <view class="divLine"></view>
+    <button class="but" bindtap="getData" data-text="彭莹"><text>口腔内科——彭莹</text> <text class="kong">></text></button>
+  </view>
+  <view>
+    <view class="divLine"></view>
+    <button class="but" bindtap="getData" data-text="陈大山"><text>口腔正畸科——陈大山</text> <text class="kong">></text></button>
+  </view>
+  <view class="divLine"></view>
+</view>

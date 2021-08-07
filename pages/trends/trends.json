@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Select": "/Componet/select/select",
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  },
+  "navigationBarTitleText": "趋势"
+}

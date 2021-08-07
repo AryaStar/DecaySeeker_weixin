@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/grant/grant",
+    "pages/index/index",
+    "pages/doctor-data/doctor-data",
+    "pages/patient-data/patient-data",
+    "pages/users/users",
+    "pages/patient/patient",
+    "pages/doctor/doctor",
+    "pages/choose/choose",
+    "pages/patient-my/patient-my",
+    "pages/trends/trends",
+    "pages/trend/trend",
+    "pages/problem/problem",
+    "pages/doctor-my/doctor-my",
+    "pages/rock1/rock1",
+    "pages/rock2/rock2",
+    "pages/rock3/rock3"
+  ],
+
+  "window": {
+    "backgroundColor": "#f6f6f6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f6f6f6",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

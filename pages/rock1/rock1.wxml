@@ -1,0 +1,4 @@
+<view>
+<image class="pic" style='height:{{Hei}}' src="https://6d79-my-9gn0t7ku8daafcf9-1305074139.tcb.qcloud.la/%E6%8E%A8%E9%80%81/%E5%B7%B4%E6%B0%8F%E5%88%B7%E7%89%99%E6%B3%95-%E5%86%85%E5%AE%B9.png?sign=4cdf9cc56436d50505ae7c0c938a54b3&t=1614363369" bindload='imgH'></image>
+</view>
+

@@ -1,0 +1,26 @@
+<!--pages/choose/choose.wxml-->
+<import src="/pages/template/tabbar.wxml" />
+
+<template is="tabBar" data="{{tabBar}}" />
+
+<view>
+  <modal title="提示" cancel-text="关闭" confirm-text="确定" hidden="{{mHidden}}" bindconfirm="changeModel"
+    bindcancel="modelCancel">该牙无数据记录，有数据记录的牙为46牙、27牙、37牙。</modal>
+</view>
+<view class="top">
+  <view class="box">
+    <view><Select prop-array='{{selectArray1}}' bind:myget='getDate1'></Select></view>
+  </view>
+
+  <view>
+    <view><button bindtap="getDate" class="left" hover-class='hover'>恒牙</button></view>
+    <view><button bindtap="getDate2" class="right" hover-class='hover'>乳牙</button></view>
+  </view>
+</view>
+
+<view class="pic">
+  <image src="{{pic}}" style="width: 80%"></image>
+</view>
+<view>
+  <button bindtap="trend" class="yuan" hover-class='hover'>确定</button>
+</view>

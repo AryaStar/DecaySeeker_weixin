@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "寻蛀-龋风险检测仪",
+  "usingComponents": {
+    "MyTitle": "/Componet/MyTitle/MyTitle"
+  }
+}

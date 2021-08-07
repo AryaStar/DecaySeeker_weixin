@@ -1,0 +1,4 @@
+/* pages/rock1/rock1.wxss */
+.pic{
+  width: 100%;
+}

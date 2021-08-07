@@ -1,0 +1,41 @@
+/* pages/doctor/doctor.wxss */
+page{
+  background-color: rgba(136, 180, 236, 0.247);
+}
+.yuan{
+  display: flex;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: rgb(126, 184, 243);
+  background-size: 220rpx 220rpx;
+  align-items: center;
+  flex-direction: center;
+  justify-content: center;
+  font-size: 43rpx;
+  color: #13227a;
+}
+.yuan_hover{
+  background-color: rgba(136, 180, 236, 0.247);
+}
+.jiance{
+  display: flex;
+  justify-content:  center;
+}
+
+.woc{
+  width: 100%;
+}
+
+.notice{
+  padding-top: 60rpx;
+  display: flex;
+  justify-content: center;
+}
+.notImg {
+  flex: 1;
+}
+.notCon{
+  flex:7;
+}
+

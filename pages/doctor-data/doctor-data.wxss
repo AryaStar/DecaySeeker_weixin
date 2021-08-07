@@ -1,0 +1,17 @@
+/* pages/doctor-data/doctor-data.wxss */
+.but{
+  text-align: left;
+}
+.kong{
+  margin-right: 50rpx;
+  float: right
+}
+.divLine{
+ background: white;
+ width: 100%;
+ height: 3rpx;
+}
+
+.hover {
+  background-color: rgb(126, 184, 243);
+}

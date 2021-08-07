@@ -1,0 +1,70 @@
+/* pages/doctor-my/doctor-my.wxss */
+page {
+  background-color: rgba(136, 180, 236, 0.247);
+}
+
+.box1{
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  margin-top: 260rpx
+}
+
+.header {
+  border-radius: 50%;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.box {
+  margin-top: 50rpx
+}
+
+.back {
+  border-radius: 40%;
+  margin-top: -220rpx;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 200rpx;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 600rpx;
+}
+
+.box3 {
+  width: 100%;
+  height: 500rpx;
+  background-color: rgba(136, 180, 236, 0.247);
+}
+
+.juzhong {
+  display: flex;
+  justify-content: center;
+  margin-top: 250rpx
+}
+
+.divLine{
+  background: white;
+  width: 100%;
+  height: 2rpx;
+ }
+
+ .kong{
+  margin-right: 50rpx;
+  float: right
+}

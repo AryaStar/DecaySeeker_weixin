@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Select": "/Componet/select/select"
+  },
+  "navigationBarTitleText": "趋势"
+}

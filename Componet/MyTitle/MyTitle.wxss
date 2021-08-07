@@ -1,0 +1,17 @@
+/* Componet/MyTitle/MyTitle.wxss */
+.my_title{
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+  height: 300rpx;
+}
+.logo{
+  flex: 1;
+}
+.name{
+  flex: 2;
+  font-size: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

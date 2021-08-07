@@ -1,0 +1,6 @@
+page{
+  background-color: white;
+}
+.pic{
+  width: 100%;
+}

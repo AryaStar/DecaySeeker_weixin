@@ -1,0 +1,3 @@
+<view>
+<image class="pic" style='height:{{Hei}}' bindload='imgH'  src="{{pic}}"></image>
+</view>

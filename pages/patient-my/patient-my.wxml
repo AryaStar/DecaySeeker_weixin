@@ -1,0 +1,33 @@
+<!--pages/doctor-my/doctor-my.wxml-->
+
+<import src="/pages/template/tabbar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />
+
+<view class="box1">
+  <view class="box3">
+    <view class="container">
+      <image class="back" src='/images/back1.png'></image>
+      <view class="box2">
+        <image class="header" src="{{userTx || defaultUrl}}"></image>
+      </view>
+    </view>
+    <view class="juzhong"><text>{{username}}</text></view>
+  </view>
+
+  <view class="box">
+    <view class="box1">
+      <navigator url="/pages/doctor-data/doctor-data">
+        <text>医生简介</text>
+        <text class="kong">></text>
+      </navigator>
+    </view>
+    <view class="divLine"></view>
+    <view class="box1">
+      <navigator url="/pages/problem/problem">
+        <text>问题反馈</text>
+        <text class="kong">></text>
+      </navigator>
+    </view>
+    <view class="divLine"></view>
+  </view>
+</view>

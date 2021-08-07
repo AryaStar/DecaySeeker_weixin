@@ -1,0 +1,2 @@
+<!--pages/problem/problem.wxml-->
+<button open-type='feedback' type='primary' style="margin-top: 100rpx">意见反馈</button>

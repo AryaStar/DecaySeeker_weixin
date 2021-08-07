@@ -1,0 +1,56 @@
+.top{
+  
+  background-image: -webkit-linear-gradient(top,white,#C3DDFA);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.pic {
+  display: flex;
+  justify-content: center;
+  margin-top: 80rpx;
+}
+
+.pic image{
+  -webkit-box-shadow:  0px 6px 10px 10px rgba(245, 241, 241, 0.5);
+  -moz-box-shadow:  0px 6px 10px 10px rgba(247, 243, 243, 0.5);
+  box-shadow: 0px 6px 10px 10px rgba(250, 249, 249, 0.5);   
+}
+
+.left {
+  width: 30%;
+  margin-top: 80rpx;
+  margin-left: 100rpx;
+  float: left;
+  color: #283894;
+  background-color: rgba(255, 255, 255, 0.623);
+}
+
+.right {
+  width: 30%;
+  margin-top: 80rpx;
+  margin-right: 100rpx;
+  float: right;
+  color: #13227a;
+  background-color: rgba(255, 255, 255, 0.623)
+}
+
+.yuan {
+  display: flex;
+  width: 30%;
+  border-radius: 5%;
+  margin-top: 100rpx;
+  background-color: rgba(255, 255, 255, 0.623);
+  background-size: 40rpx 40rpx;
+  align-items: center;
+  flex-direction: center;
+  justify-content: center;
+  color: #13227a;
+}
+
+.hover {
+  background-color: rgb(126, 184, 243);
+}

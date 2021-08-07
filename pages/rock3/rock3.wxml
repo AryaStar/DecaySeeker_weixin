@@ -1,0 +1,4 @@
+<!--pages/rock3/rock3.wxml-->
+<view>
+<image class="pic" style='height:{{Hei}}' bindload='imgH'  src="https://6d79-my-9gn0t7ku8daafcf9-1305074139.tcb.qcloud.la/%E6%8E%A8%E9%80%81/%E9%BE%8B%E7%97%85%E7%9A%84%E5%8D%B1%E5%AE%B3-%E5%86%85%E5%AE%B9.png?sign=caec806d413c18b2b4d53bfb7712f368&t=1614363135"></image>
+</view>

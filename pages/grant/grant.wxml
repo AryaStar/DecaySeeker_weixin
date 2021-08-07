@@ -1,0 +1,17 @@
+<!--pages/grant/grant.wxml-->
+<view class="main">
+  <MyTitle></MyTitle>
+</view>
+<view class="container">
+<text>请输入您的称呼：</text>
+<input bindinput="ins" class="bor"></input>
+<text style="margin-top:20rpx">请问您的身份是？</text>
+<button class="btn1" open-type="getUserInfo" bindgetuserinfo="getUserInfoHandler" bindtap="doctor">
+  <image class="btnImg" src="/images/doctor.png"></image>
+  <view>医生</view> 
+</button>
+<button class="btn1" open-type="getUserInfo" bindgetuserinfo="getUserInfoHandler" bindtap="patient">
+  <image class="btnImg" src="/images/user.png"></image>
+  <view>患者</view> 
+</button>
+</view>

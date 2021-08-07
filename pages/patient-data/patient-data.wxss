@@ -1,0 +1,18 @@
+/* pages/patient-data/patient-data.wxss */
+.but{
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100rpx;
+}
+.divLine{
+ background: white;
+ width: 100%;
+ height: 3rpx;
+}
+
+.hover {
+  background-color: rgb(54, 86, 156);
+}

@@ -1,0 +1,11 @@
+<!--Componet/MyTitle/MyTitle.wxml-->
+<view class="my_title">
+  <!-- logo -->
+  <navigator class="logo">
+    <image class="logo_img" style="width:100%;height:200rpx" src="/images/健康牙齿.png"></image>
+  </navigator>
+  <!-- name -->
+  <view class="name">
+    <text>寻蛀\n龋风险检测仪</text> 
+  </view>
+</view>
