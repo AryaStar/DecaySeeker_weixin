@@ -76,7 +76,7 @@ Page({
           content: mytoken,
           cancelColor: 'cancelColor',
           showCancel: false,
-        })
+        }) 
       }
     })
 
