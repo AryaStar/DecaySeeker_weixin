@@ -53,9 +53,9 @@ Page({
 
   show:function(){
     var that = this
-    this.setData({
-      mHidden: false
-    })
+    // this.setData({
+    //   mHidden: false
+    // })
     // db.collection('users').where({
     //   userId: wx.getStorageSync('userId')
     // })

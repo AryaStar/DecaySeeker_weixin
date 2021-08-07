@@ -3,9 +3,9 @@
 <import src="/pages/template/tabbar.wxml" /> 
  <template is="tabBar" data="{{tabBar}}"/>
 
-<view>
+<!-- <view>
 <modal title="提示" cancel-text="关闭" confirm-text="确定" hidden="true" bindconfirm="changeModel" bindcancel="modelCancel">46牙远中面龋风险为5级</modal>
-</view>
+</view> -->
 
 
 
