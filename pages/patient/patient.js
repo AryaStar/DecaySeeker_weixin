@@ -53,17 +53,17 @@ Page({
 
   show:function(){
     var that = this
-    // this.setData({
-    //   mHidden: false
-    // })
+    this.setData({
+      mHidden: false
+    })
     // db.collection('users').where({
     //   userId: wx.getStorageSync('userId')
     // })
 
     wx.request({
-      url: 'http://127.0.0.1:5000//getTokenByCheckNo',
+      url: 'http://127.0.0.1:5000/createNewRecordById',
       data:{
-        record_no: '1'
+        user_id: '1'
       },
       header: {
         'content-type': 'application/json' // 默认值
@@ -76,7 +76,7 @@ Page({
           content: mytoken,
           cancelColor: 'cancelColor',
           showCancel: false,
-        }) 
+        })
       }
     })
 

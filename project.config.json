@@ -5,9 +5,9 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": true,
-    "es6": false,
-    "enhance": true,
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
     "postcss": true,
     "preloadBackgroundData": false,
     "minified": true,
@@ -31,6 +31,7 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "enableEngineNative": false,
     "useIsolateContext": false,
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,

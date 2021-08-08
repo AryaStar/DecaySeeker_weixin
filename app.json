@@ -15,7 +15,9 @@
     "pages/doctor-my/doctor-my",
     "pages/rock1/rock1",
     "pages/rock2/rock2",
-    "pages/rock3/rock3"
+    "pages/rock3/rock3",
+    "pages/choose_base/choose_base",
+    "pages/arecord/arecord"
   ],
 
   "window": {

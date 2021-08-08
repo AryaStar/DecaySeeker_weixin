@@ -120,8 +120,8 @@ App({
         active: true
       },
       {
-        "pagePath": "/pages/choose/choose",
-        "text": "趋势",
+        "pagePath": "/pages/choose_base/choose_base",////////////////////////////////////////////////////////////////////
+        "text": "记录",
         "iconPath": "/images/tab3.jpg",
         "selectedIconPath": "/images/tab4.jpg",
         "selectedColor": "#13227a",

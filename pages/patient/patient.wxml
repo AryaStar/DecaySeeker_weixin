@@ -3,9 +3,9 @@
 <import src="/pages/template/tabbar.wxml" /> 
  <template is="tabBar" data="{{tabBar}}"/>
 
-<!-- <view>
+<view>
 <modal title="提示" cancel-text="关闭" confirm-text="确定" hidden="true" bindconfirm="changeModel" bindcancel="modelCancel">46牙远中面龋风险为5级</modal>
-</view> -->
+</view>
 
 
 
@@ -23,7 +23,7 @@
  <image class="notImg" src="/images/信息.png" mode='widthFix'></image>
  <view class="notCon">
   <text decode="{{true}}">&emsp;&emsp;请让您的医生将参比电极挂在您口角处，用工作电极接触您需要检测的牙面获取龋风险指标。</text> 
-  <text decode="{{true}}">\n&emsp;&emsp;点击“检测结果”按钮可同步检测结果，检测的龋风险由0级到5级依次增高。</text>
+  <text decode="{{true}}">\n&emsp;&emsp;点击“开始检测”按钮可同步检测结果，检测的龋风险由0级到5级依次增高。</text>
   </view> 
 </view>
 

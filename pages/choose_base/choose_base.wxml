@@ -1,0 +1,69 @@
+<!--pages/choose/choose.wxml-->
+<import src="/pages/template/tabbar.wxml" />
+
+
+<view>
+<block wx:for="{{listData}}" wx:key="key">
+  <view class="teeth-list js_teeth_list ">
+    <view data-supplierid="100020" data-key="" class="teeth-list-item  ">
+      <view class="teeth-time">{{item.id}}</view>
+      <button class="tobooking" bindtap="goto" data-value="{{item.id}}"> 查看</button>
+      <view class="detail">
+        <view class="detail1">
+          <view class="start">
+            <text class="icon-circle s-icon1"></text>检测时间</view>
+          <view class="end">
+            <text class="icon-circle s-icon2"></text>{{item.time}}</view>
+        </view>
+        <view class="tags">
+          <view>
+            <text class="price">已检测</text>
+          </view>
+          <!-- <view>
+            <text class="countleft">10张</text>
+          </view> -->
+          <view>
+            <text class="b-tags js_tags"></text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+</view>
+
+<view class="pic">
+  <image src="{{pic}}" style="width: 80%"></image>
+</view> 
+
+<view>
+<template is="tabBar" data="{{tabBar}}" />
+</view>
+
+
+<!-- <view class="table">
+  <view class="tr bg-w">
+    <view class="th">检测编号</view>
+    <view class="th ">日期</view>
+    <view class="th">状态</view>
+    <view class="th ">详细信息</view>
+    <view class="th ">(id)</view>
+ </view>
+
+ <block wx:for="{{listData}}" wx:key="{[code]}">
+    <view class="tr" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.code}}</view>
+      <view class="td">{{item.date}}</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.text}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.code}}</view>
+      <view class="td">{{item.date}}</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.text}}</view>
+    </view>
+ </block>
+</view> -->

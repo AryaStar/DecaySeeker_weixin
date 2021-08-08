@@ -1,0 +1,57 @@
+<!--pages/choose/choose.wxml-->
+<import src="/pages/template/tabbar.wxml" />
+
+
+
+<view>
+  <modal title="提示" cancel-text="关闭" confirm-text="确定" hidden="{{mHidden}}" bindconfirm="changeModel"
+    bindcancel="modelCancel">该报告暂时无数据记录，等待医生上传。</modal>
+</view>
+
+
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">牙位</view>
+    <view class="th ">PH值</view>
+    <view class="th">voltage</view>
+
+ </view>
+
+ <block wx:for="{{listData}}" wx:key="{[code]}">
+    <view class="tr" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.position}}</view>
+      <view class="td">{{item.ph}}</view>
+      <view class="td">{{item.voltage}}</view>
+
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.position}}</view>
+      <view class="td">{{item.ph}}</view>
+      <view class="td">{{item.voltage}}</view>
+
+    </view>
+ </block>
+</view>
+
+
+
+
+<!-- <view class="top">
+  <view>
+    <view><button bindtap="getDate" class="left" hover-class='hover'>恒牙</button></view>
+    <view><button bindtap="getDate2" class="right" hover-class='hover'>乳牙</button></view>
+  </view>
+</view> -->
+
+
+
+
+<view class="pic">
+  <image src="{{pic}}" style="width: 80%"></image>
+</view>
+
+<view>
+  <button bindtap="trend" class="yuan" hover-class='hover' >生成报告</button>
+</view>
+
+<!-- <template is="tabBar" data="{{tabBar}}" /> -->

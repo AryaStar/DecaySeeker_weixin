@@ -1,0 +1,226 @@
+/* pages/choose_base/choose.wxss */
+.top{
+  
+  background-image: -webkit-linear-gradient(top,white,#C3DDFA);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.pic {
+  display: flex;
+  justify-content: center;
+  margin-top: 80rpx;
+  margin-bottom: 120rpx;
+}
+
+.pic image{
+  -webkit-box-shadow:  0px 6px 10px 10px rgba(245, 241, 241, 0.5);
+  -moz-box-shadow:  0px 6px 10px 10px rgba(247, 243, 243, 0.5);
+  box-shadow: 0px 6px 10px 10px rgba(250, 249, 249, 0.5);   
+}
+
+.left {
+  width: 30%;
+  margin-top: 80rpx;
+  margin-left: 100rpx;
+  float: left;
+  color: #283894;
+  background-color: rgba(255, 255, 255, 0.623);
+}
+
+.right {
+  width: 30%;
+  margin-top: 80rpx;
+  margin-right: 100rpx;
+  float: right;
+  color: #13227a;
+  background-color: rgba(255, 255, 255, 0.623)
+}
+
+.yuan {
+  display: flex;
+  width: 30%;
+  border-radius: 5%;
+  margin-top: 100rpx;
+  background-color: rgba(255, 255, 255, 0.623);
+  background-size: 40rpx 40rpx;
+  align-items: center;
+  flex-direction: center;
+  justify-content: center;
+  color: #13227a;
+}
+
+.hover {
+  background-color: rgb(126, 184, 243);
+}
+
+
+
+
+/* .table {
+  border: 0px solid darkgray;
+  font-size: 12px;
+ }
+ .tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 2rem;
+  align-items: center;
+ }
+ .td {
+   width:40%;
+   justify-content: center;
+   text-align: center;
+ }
+ .bg-w{
+  background: snow;
+ }
+   
+ .th {
+  width: 40%;
+  justify-content: center;
+  background: #3366FF;
+  color: #fff;
+  display: flex;
+  height: 2rem;
+  align-items: center;
+ } */
+
+ /* .page-wrapper {
+  margin: 0;
+  font-size: 28rpx;
+  line-height: 1.5;
+  color: #333;
+  background-color: #efefef;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  min-height:2000rpx;
+} */
+
+.teeth-list .teeth-list-item {
+display: flex;
+position: relative;
+height: 160rpx;
+background-color: #fff;
+margin: 16rpx 0;
+border: 2rpx solid #e5e5e5;
+border-width: 2rpx 0;
+}
+
+.teeth-list .teeth-list-item::before,.teeth-list .teeth-list-item::after {
+position: absolute;
+left: 122rpx;
+content: '';
+width: 24rpx;
+height: 12rpx;
+background-color: #efefef;
+border: 2rpx solid #e5e5e5;
+}
+
+.teeth-list .teeth-list-item::before {
+border-radius: 0 0 60rpx 60rpx;
+  border-top: none;
+top: -2rpx;
+}
+
+.teeth-list .teeth-list-item::after {
+border-radius: 60rpx 60rpx 0 0;
+  border-bottom: none;
+bottom: -2rpx;
+}
+
+.teeth-list .teeth-list-item .teeth-time {
+position: absolute;
+left: 0;
+width: 134rpx;
+height: 100rpx;
+line-height: 100rpx;
+margin: 30rpx 0;
+color: #00b358;
+text-align: center;
+font-size: 40rpx;
+font-family: Arial;
+border-right: 2rpx dashed #e5e5e5;
+}
+
+.teeth-list .teeth-list-item .tobooking {
+background-color: #839df3;
+position: absolute;
+right: 0;
+width: 120rpx;
+height: 160rpx;
+line-height: 160rpx;
+text-align: center;
+color: #fff;
+font-size: 30rpx;
+}
+
+.teeth-list .teeth-list-item.disabled .tobooking {
+background-color: #c5c5c5;
+}
+
+.teeth-list .teeth-list-item .detail {
+height: 80rpx;
+padding: 36rpx 0;
+margin: 0 140rpx 0 144rpx;
+}
+
+.teeth-list .teeth-list-item .detail  .sub-list{
+  height: 52rpx;
+}
+
+
+.teeth-list .teeth-list-item .start, .teeth-list .teeth-list-item .end {
+color: #333333;
+font-size: 26rpx;
+
+}
+
+.teeth-list .teeth-list-item .price {
+font-family: Arial;
+color: #fd8f01;
+font-size: 32rpx;
+font-weight: 600;
+}
+
+.teeth-list .teeth-list-item.disabled .ticket {
+display: none;
+}
+
+.teeth-list .teeth-list-item .ticket {
+color: #fd8f01;
+font-size: 24rpx;
+border: 2rpx solid #fd8f01;
+padding: 2rpx 8rpx;
+border-radius: 10rpx;
+font-family: Arial;
+}
+
+.teeth-list .teeth-list-item.disabled .ticket {
+color: #c5c5c5;
+}
+
+.teeth-list .teeth-list-item .s-icon1 {
+margin: 0 10rpx;
+border-color: #00B358;
+}
+
+.teeth-list .teeth-list-item .s-icon2 {
+margin: 0 10rpx;
+border-color: #f06463;
+}
+
+.teeth-list .teeth-list-item .tags {
+  width: 160rpx;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  margin-right: 138rpx;
+  margin-top: 34rpx;
+  top: 0;
+}
