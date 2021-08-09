@@ -1,6 +1,18 @@
 <!--pages/doctor-data/doctor-data.wxml-->
 <view>
-  <view>
+  <block wx:for="{{listData}}" wx:key="key">
+    <view>
+      <view class="divLine"></view>
+      <button class="but" bindtap="getData" data-text="{{item.id}}"  hover-class='hover'><text>{{item.department}}--{{item.name}}</text> <text class="kong">></text></button>
+    </view>
+    <view>
+      <view class="divLine"></view>
+      <button class="but" bindtap="getData" data-text="{{item.id}}"  hover-class='hover'><text>{{item.department}}--{{item.name}}</text> <text class="kong">></text></button>
+    </view>
+  </block>
+
+
+  <!-- <view>
     <view class="divLine"></view>
     <button class="but" bindtap="getData" data-text="赵小芳"  hover-class='hover'><text>儿童口腔科——赵小芳</text> <text class="kong">></text></button>
   </view>
@@ -27,6 +39,5 @@
   <view>
     <view class="divLine"></view>
     <button class="but" bindtap="getData" data-text="陈大山"><text>口腔正畸科——陈大山</text> <text class="kong">></text></button>
-  </view>
-  <view class="divLine"></view>
+  </view> -->
 </view>

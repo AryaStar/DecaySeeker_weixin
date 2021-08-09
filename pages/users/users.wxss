@@ -1,6 +1,71 @@
 page{
-  background-color: white;
+  background-color: #C3DDFA;
 }
 .pic{
   width: 100%;
+}
+.yuan {
+  display: flex;
+  width: 30%;
+  border-radius: 5%;
+  margin-top: 50rpx;
+  /* margin-bottom: 500rpx; */
+  background-color: rgba(99, 150, 245, 0.623);
+  background-size: 40rpx 40rpx;
+  align-items: center;
+  flex-direction: center;
+  justify-content: center;
+  color: #13227a;
+}
+
+.hover {
+  background-color: rgb(126, 184, 243);
+}
+
+.top{
+  display:flex;
+  flex-direction: row;
+  width:90%;
+  height:180rpx;
+  padding:10rpx 10rpx;
+  margin:10rpx auto;
+}
+.top-trimg{
+  width:160rpx;
+  height:160rpx;
+  margin:15rpx 20rpx; 
+  border-radius: 130rpx;
+}
+.top-info{
+  margin:15rpx 20rpx;
+  overflow: hidden; 
+  font-size: 32rpx;
+  font-family: "微软雅黑";
+  color:#606060;
+}
+.toin-info{
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+.in-title{
+  font-size: 32rpx;
+  font-family: "微软雅黑";
+  color:#606060;
+  line-height: 60rpx;
+  padding-left:20rpx;
+  border-left: 10rpx solid #4ec4c8;
+  border-bottom: 1rpx solid #9ccbf7;
+}
+.in-info{
+  font-size: 32rpx;
+  font-family: "微软雅黑";
+  color:#606060;
+  line-height: 60rpx;
+  padding:16rpx;
+}
+.clear{
+  display: flex;
+  flex-direction: column;
+  height:16rpx;
+  background: white;
 }

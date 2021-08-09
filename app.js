@@ -32,7 +32,9 @@ App({
       number2: [],
       name:'',
       num:'',
-      sum:""
+      sum:"",
+      listData:[],
+      doctor_now:{},
     }
   },
   

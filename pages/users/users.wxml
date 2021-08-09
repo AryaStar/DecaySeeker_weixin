@@ -1,3 +1,31 @@
-<view>
+<!-- <view>
 <image class="pic" style='height:{{Hei}}' bindload='imgH'  src="{{pic}}"></image>
+</view>  -->
+
+<view class="content">
+  <view class="top">
+    <view class="top-tr">
+     <image src="{{trimg}}" class="top-trimg"></image>
+    </view>
+    <view class="top-info">
+      <view class="toin-name">姓名：{{doctor_now.name}}</view>
+      <view class="toin-info"> 所属科室：{{doctor_now.department}}</view>
+      <view class="toin-info"> 擅长领域：{{doctor_now.field}}</view>
+    </view>
+  </view>
+  <view class="clear"></view>
+  <view class="info">
+    <view class="in-title">医生简介</view>
+    <view class="in-info">{{doctor_now.introduction}}</view>
+  </view>
+  <view class="clear"></view>
+  <view class="info">
+    <view class="in-title">联系电话</view>
+    <view class="in-info">{{doctor_now.phone}}</view>
+  </view>
+  <view class="clear"></view>
+</view>
+
+<view>
+  <button bindtap="" class="yuan" hover-class='hover'>点击咨询</button>
 </view>

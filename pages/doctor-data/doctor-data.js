@@ -8,22 +8,46 @@ Page({
    */
   data: {
 name:'',
+did:'',
+listData:[],
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this
+    wx.request({
+      url: 'http://127.0.0.1:5000/getAllDoctors',
+      data:{
+        // user_id: '1'
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        var mydata = res.data.doctor
+        that.setData({
+          listData: mydata
+        })
+        
+      }
+    })
+
     
   },
 
   getData:function(e){
-    console.log(e.target.dataset.text)
+    var doctorid = e.target.dataset.text
+    console.log(doctorid)
     this.setData({
-     name: e.target.dataset.text
+     did: doctorid
     })
-    app.globalData.name=this.data.name
-    console.log(app.globalData.name)
+    app.globalData.listData=this.data.listData
+    // console.log(app.globalData.listData)
+    app.globalData.doctor_now=this.data.listData[doctorid-1]
+ 
     wx.navigateTo({
       url: '/pages/users/users',
     })
