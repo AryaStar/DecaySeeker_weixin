@@ -42,8 +42,8 @@
   display: flex;
   width: 30%;
   border-radius: 5%;
-  margin-top: 100rpx;
-  margin-bottom: 50rpx;
+  margin-top: 50rpx;
+  margin-bottom: 150rpx;
   background-color: rgba(255, 255, 255, 0.623);
   background-size: 40rpx 40rpx;
   align-items: center;

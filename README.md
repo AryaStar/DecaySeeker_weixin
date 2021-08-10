@@ -20,6 +20,8 @@ c. choose_base.js文件goto函数，实现点击“查看”跳转到arecord界�
 
 d. arecord.js文件onload函数加载时请求http://127.0.0.1:5000/getDataByNo 接口，返回牙位信息渲染到前端
 
+e. 设计arecord.js文件trend函数，请求http://127.0.0.1:5000/getReportByNo 接口。若未上传文件则弹窗显示，若有文件则下载文件（目前对文件下载路径上还未处理好）。
+
 ### 3.设计“我的”->“医生简介”若干功能
 
 a. 点击“医生简介”进入doctor-data页面，进入后点击列表中某医生进入users页面。

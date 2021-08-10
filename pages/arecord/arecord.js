@@ -13,8 +13,8 @@ Page({
     num1:'',
     num:'',
     pic:'/images/恒牙.jpg',
-    listData:[]
-
+    listData:[],
+    record_no:'',
   },
   changeModel: function () {
     this.setData({
@@ -31,59 +31,85 @@ Page({
       mHidden: true
     })
   },
-  changeModel: function () {
-    this.setData({
-      mHidden: true
-    })
-  },
-  getDate: function (e) {
-    this.setData({
-      pic: '/images/恒牙.jpg'
-    })
-    var pic = this.data.pic
-  },
-  getDate2: function (e) {
-    this.setData({
-      pic: '/images/乳牙.jpg'
-    })
-    var pic = this.data.pic
-  },
 
-  getDate1: function (e) {
-    this.setData({
-      num: e.detail.text
-    })
-  },
+
+  // getDate1: function (e) {
+  //   this.setData({
+  //     num: e.detail.text
+  //   })
+  // },
+
   trend: function(e){
-    var num = this.data.num
-    if (num == 46){
-      wx.showModal({
-        title: "提示",
-        content: "46牙远中面龋风险为5级"
-      })
-    }
-    else if(num == 37){
-      wx.showModal({
-        title: "提示",
-        content: "37牙的近中面龋风险为4级"
-      })
-    }
-    else if(num == 27){
-      wx.showModal({
-        title: "提示",
-        content: "27牙颊面龋风险为3级"
-      })
-    }
-    else{
-      this.show()
-    }
+    var that = this
+    var getid= that.data.record_no
+    // console.log(getid+'haha')
+    wx.request({
+      url: 'http://127.0.0.1:5000/getReportByNo',
+      data:{
+        record_no: getid
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        var mydata = res.data.signal 
+        if(mydata == '200'){
+          that.show()
+          console.log(mydata)
+        }else{
+          wx.downloadFile({
+            url: 'http://127.0.0.1:5000/getReportByNo?record_no'+getid, //仅为示例，并非真实的资源
+            filePath: '/download',
+            success (res) {
+              // 只要服务器有响应数据，就会把响应内容写入文件并进入 success 回调，业务需要自行判断是否下载到了想要的内容
+              console.log(res)
+              if (res.statusCode === 200) {
+                // var rr=res.tempFilePath;
+                console.log('haha')
+              }
+
+            }
+          })
+
+        }
+        
+      }
+    })
+
+   
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // db.collection('users').where({
+    var that = this
+    app.editTabBar1();
+     let getid=options.id.toString()
+      // console.log(getid)
+      that.setData({
+        record_no: getid
+      })
+      // console.log(that.data.record_no+'hihi')
+      wx.request({
+        url: 'http://127.0.0.1:5000/getDataByNo',
+        data:{
+          record_no: getid
+        },
+        header: {
+          'content-type': 'application/json' // 默认值
+        },
+        success (res) {
+          let mydata = res.data.data
+          that.setData({
+            listData: mydata
+          })
+          console.log(mydata)
+        }
+      })
+
+        // db.collection('users').where({
     //   userId: wx.getStorageSync('userId')
     // })
     //   .get({
@@ -133,28 +159,6 @@ Page({
     //       app.globalData.number2 = this.data.number2
     //     }
     //   })
-    var that = this
-    app.editTabBar1();
-
-     let getid=options.id.toString()
-      console.log(getid)
-
-      wx.request({
-        url: 'http://127.0.0.1:5000/getDataByNo',
-        data:{
-          record_no: getid
-        },
-        header: {
-          'content-type': 'application/json' // 默认值
-        },
-        success (res) {
-          let mydata = res.data.data
-          that.setData({
-            listData: mydata
-          })
-          console.log(mydata)
-        }
-      })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
