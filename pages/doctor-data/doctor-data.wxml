@@ -5,10 +5,7 @@
       <view class="divLine"></view>
       <button class="but" bindtap="getData" data-text="{{item.id}}"  hover-class='hover'><text>{{item.department}}--{{item.name}}</text> <text class="kong">></text></button>
     </view>
-    <view>
-      <view class="divLine"></view>
-      <button class="but" bindtap="getData" data-text="{{item.id}}"  hover-class='hover'><text>{{item.department}}--{{item.name}}</text> <text class="kong">></text></button>
-    </view>
+    
   </block>
 
 

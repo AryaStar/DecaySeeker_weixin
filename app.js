@@ -33,8 +33,7 @@ App({
       name:'',
       num:'',
       sum:"",
-      listData:[],
-      doctor_now:{},
+      doctorid_now:'',
     }
   },
   

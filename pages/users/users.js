@@ -10,8 +10,9 @@ Page({
     trimg: '/images/tab6.jpg',
     pic:'',
     Hei: "",
-    listData:[],
+    // listData:[],
     doctor_now:{},
+    doctorid_now:'',
   },
 
   imgH: function (e) {
@@ -28,12 +29,27 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var doctor_now = app.globalData.doctor_now
-    var mylistData = app.globalData.listData
-    console.log(doctor_now);
-    this.setData({
-      doctor_now:doctor_now
+    var that=this
+    var doctorid_now = app.globalData.doctorid_now
+    // console.log(doctorid_now+'haha');
+    wx.request({
+      url: 'http://127.0.0.1:5000/getDoctorById',
+      data: {
+        doctor_id: doctorid_now,
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        let mydata = res.data.doctor
+        that.setData({
+          doctor_now: mydata
+        })
+        // console.log(mydata)
+      }
     })
+
+
 
 
     // if(name=="赵小芳"){

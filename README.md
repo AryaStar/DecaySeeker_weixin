@@ -24,11 +24,11 @@ d. arecord.js文件onload函数加载时请求http://127.0.0.1:5000/getDataByNo 
 
 a. 点击“医生简介”进入doctor-data页面，进入后点击列表中某医生进入users页面。
 
-b. doctor.js文件onload函数加载时请求http://127.0.0.1:5000/getAllDoctors 接口，返回医生信息渲染到前端
+b. doctor-data.js文件onload函数加载时请求http://127.0.0.1:5000/getAllDoctors 接口，返回医生信息渲染到前端
 
-c. doctor.js文件getData函数，实现点击“某医生”，将医生信息写入全局变量doctor_now，并跳转到users界面。
+c. doctor-data.js文件getData函数，实现点击“某医生”，将医生id写入app.js全局变量doctorid_now中，并跳转到users界面。
 
-d. users.js文件onload函数加载时读取全局变量doctor_now并渲染到前端界面。
+d. users.js文件onload函数加载时读取全局变量doctorid_now并请求http://127.0.0.1:5000/getDoctorById 接口，返回该医生json信息渲染到前端界面。
 
 
 

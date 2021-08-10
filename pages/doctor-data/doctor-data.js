@@ -44,10 +44,9 @@ listData:[],
     this.setData({
      did: doctorid
     })
-    app.globalData.listData=this.data.listData
-    // console.log(app.globalData.listData)
-    app.globalData.doctor_now=this.data.listData[doctorid-1]
- 
+
+    app.globalData.doctorid_now = doctorid
+
     wx.navigateTo({
       url: '/pages/users/users',
     })
