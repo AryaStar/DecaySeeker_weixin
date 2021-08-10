@@ -39,6 +39,7 @@ Page({
   //   })
   // },
 
+  
   trend: function(e){
     var that = this
     var getid= that.data.record_no
