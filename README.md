@@ -12,7 +12,7 @@ b. 微信端不支持wx.request本地IP地址，故需要在微信开发者工�
 
 ### 2.改动“记录”页若干功能
 
-a. 两个page页面与之相关，choose_base与arecord。点击“记录”可进入choose_base界面。
+a. 点击“记录”可进入choose_base界面，点击单个记录可进入arecord界面。
 
 b. choose_base.js文件onload函数加载时请求http://127.0.0.1:5000/getAllRecordsNoByUserId 接口并返回json数据以表格渲染到前端。
 
