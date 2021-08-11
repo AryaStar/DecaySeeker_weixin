@@ -166,10 +166,11 @@ page {
 }  
 
 .menu-item1{  
-  width: 33%;  
+  width: 25%;  
   float: left;  
   text-align: center;  
   padding-top: 8px;  
+
 }  
 
 .img{ 

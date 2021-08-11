@@ -1,0 +1,3 @@
+<!--pages/shop/shop.wxml-->
+<import src="/pages/template/tabbar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />

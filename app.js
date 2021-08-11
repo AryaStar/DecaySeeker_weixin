@@ -130,6 +130,15 @@ App({
         active: false
       },
       {
+        "pagePath": "/pages/shop/shop",////////////////////////////////////////////////////////////////////
+        "text": "商店",
+        "iconPath": "/images/doctor.png",
+        "selectedIconPath": "/images/信息.png",
+        "selectedColor": "#13227a",
+        "clas": "menu-item1",
+        active: false
+      },
+      {
         "pagePath": "/pages/patient-my/patient-my",
         "text": "我的",
         "iconPath": "/images/tab5.jpg",
