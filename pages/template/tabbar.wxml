@@ -1,7 +1,7 @@
 
 <template name="tabBar">    
 
-  <view class="tab-bar" style="color: {{tabBar.color}}; background: {{tarBar.backgroundColor}}; {{tabBar.position=='top'? 'top: 0' : 'bottom: 0'}}; {{tabBar.borderStyle? (tabBar.position=='top'? 'border-bottom: solid 1px '+tabBar.borderStyle + ';' : 'border-top: solid 1px '+tabBar.borderStyle + ';') : ''}}">    
+  <view class="tab-bar" style="color: {{tabBar.color}}; background: #C3DDFA; {{tabBar.position=='top'? 'top: 0' : 'bottom: 0'}}; {{tabBar.borderStyle? (tabBar.position=='top'? 'border-bottom: solid 1px '+tabBar.borderStyle + ';' : 'border-top: solid 1px '+tabBar.borderStyle + ';') : ''}}">    
 
   <block wx:for="{{tabBar.list}}" wx:key="pagePath">    
 
