@@ -27,5 +27,5 @@
 </view>
 
 <view>
-  <button bindtap="" class="yuan" hover-class='hover'>点击咨询</button>
+  <button bindtap="chat_with" class="yuan" hover-class='hover'>点击咨询</button>
 </view>

@@ -45,6 +45,13 @@ Page({
     downHeight:''
   },
 
+//   test:function(){
+//     wx.navigateTo({
+//       url: '../chatting/chatting'
+//   })
+// },
+
+
   changeModel:function(){
     this.setData({
     mHidden:true

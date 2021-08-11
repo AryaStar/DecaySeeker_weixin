@@ -15,16 +15,15 @@ Page({
     doctorid_now:'',
   },
 
-  imgH: function (e) {
-    var winWid = wx.getSystemInfoSync().windowWidth;         //获取当前屏幕的宽度
-    var imgh = e.detail.height;　　　　　　　　　　　　　　　　//图片高度
-    var imgw = e.detail.width;
-    var swiperH = winWid * imgh / imgw + "px"　　　　　　　　　　//等比设置swiper的高度。  即 屏幕宽度 / swiper高度 = 图片宽度 / 图片高度    ==》swiper高度 = 屏幕宽度 * 图片高度 / 图片宽度
-    this.setData({
-      Hei: swiperH　　　　　　　　//设置高度
+  
+
+  chat_with: function (e) {
+    // let value= e.currentTarget.dataset.value
+    // console.log(value)
+    wx.navigateTo({
+      url: '../chatting/chatting'//+value,
     })
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -48,9 +47,6 @@ Page({
         // console.log(mydata)
       }
     })
-
-
-
 
     // if(name=="赵小芳"){
     //   this.setData({

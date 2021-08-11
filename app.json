@@ -17,7 +17,8 @@
     "pages/rock2/rock2",
     "pages/rock3/rock3",
     "pages/choose_base/choose_base",
-    "pages/arecord/arecord"
+    "pages/arecord/arecord",
+    "pages/chatting/chatting"
   ],
 
   "window": {
