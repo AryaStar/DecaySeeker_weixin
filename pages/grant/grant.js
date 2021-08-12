@@ -17,6 +17,31 @@ Page({
 
   },
 
+  doctor:function(e){
+    var that = this
+    this.setData({
+      identity:'医生'
+    })
+    wx.showToast({
+      title: '注册成功，再点击一次登陆',
+      icon: 'none',
+      duration: 1600
+    })
+    that.onLoad()
+  },
+  patient: function (e) {
+    var that = this
+    this.setData({
+      identity:'患者'
+    })
+    wx.showToast({
+      title: '注册成功，再点击一次登陆',
+      icon: 'none',
+      duration: 1600
+    })
+    that.onLoad()
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -32,12 +57,12 @@ Page({
       })
       console.log(identity)
       if (identity =='医生') {
-        wx.redirectTo({
+        wx.navigateTo({
           url: '/pages/doctor/doctor',
         })
       }
       else  if (identity=='患者'){
-        wx.redirectTo({
+        wx.navigateTo({
           url: '/pages/patient/patient',
         })
       }  
@@ -153,16 +178,7 @@ Page({
     return userId;
   },
 
-  doctor:function(e){
-    this.setData({
-      identity:'医生'
-    })
-  },
-  patient: function (e) {
-    this.setData({
-      identity:'患者'
-    })
-  },
+  
   ins: function(e){
     this.setData({
       realname:e.detail.value

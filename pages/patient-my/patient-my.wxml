@@ -29,5 +29,13 @@
       </navigator>
     </view>
     <view class="divLine"></view>
+    <view class="box1" bindtap="clear">
+      <navigator url="/pages/grant/grant">
+        <text>退出登陆</text>
+        <text class="kong">></text>
+      </navigator>
+    </view>
+    <view class="divLine"></view>
   </view>
+  
 </view>

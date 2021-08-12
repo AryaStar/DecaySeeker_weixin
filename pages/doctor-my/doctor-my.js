@@ -11,7 +11,9 @@ Page({
     defaultUrl: '/images/user1.jpg',
 
   },
-
+  clear: function(e){
+    wx.clearStorage()
+  },
   /**
    * 生命周期函数--监听页面加载
    */
