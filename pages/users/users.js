@@ -26,7 +26,7 @@ Page({
 
   sign: function(e){
     wx.showToast({
-      title: '向医院提起挂号申请',
+      title: '向医院申请挂号',
     })
   },
 
