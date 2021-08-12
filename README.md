@@ -41,6 +41,6 @@
 * chatting_doctor.js文件中onLoad函数加载时，请求http://127.0.0.1:5000/getChatById 接口，请求该医患的聊天记录并渲染到前端。
 * chatting_doctor.js文件中sendClick函数，发送消息的时候，把消息显示到前端，并请求http://127.0.0.1:5000/addChatById 接口，将该聊天记录添加到后台csv文件。
 
-## 6.设计商店界面
+### 6.设计商店界面
 
 * 暂定为静态界面展示医疗器械图片
