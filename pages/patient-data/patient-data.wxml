@@ -2,19 +2,19 @@
 <view>
   <view>
     <view class="divLine"></view>
-    <button class="but" bindtap="getData" data-text="A" hover-class='hover' ><text>患者A</text></button>
+    <button class="but" bindtap="getData" data-text="A" hover-class='hover' ><text>患者1</text></button>
   </view>
   <view>
   <view class="divLine"></view>
-    <button class="but" bindtap="getData" data-text="B" hover-class='hover' ><text>患者B</text></button>
+    <button class="but" bindtap="getData" data-text="B" hover-class='hover' ><text>患者2</text></button>
   </view>
   <view class="divLine"></view>
   <view>
-    <button class="but" bindtap="getData" data-text="C" hover-class='hover' ><text>患者C</text></button>
+    <button class="but" bindtap="getData" data-text="C" hover-class='hover' ><text>患者3</text></button>
   </view>
   <view class="divLine"></view>
   <view>
-    <button class="but" bindtap="getData" data-text="D" hover-class='hover' ><text>患者D</text></button>
+    <button class="but" bindtap="getData" data-text="D" hover-class='hover' ><text>患者4</text></button>
   </view>
   <view class="divLine"></view>
 </view>

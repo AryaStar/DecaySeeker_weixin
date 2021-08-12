@@ -13,14 +13,11 @@
 ### 2.改动“记录”页若干功能
 
 * 点击“记录”可进入choose_base界面，点击单个记录“查看”可进入arecord界面。
-
 * choose_base.js文件onload函数加载时请求http://127.0.0.1:5000/getAllRecordsNoByUserId 接口并返回json数据以表格渲染到前端。
-
 * choose_base.js文件goto函数，实现点击“查看”跳转到arecord界面。
-
 * arecord.js文件onload函数加载时请求http://127.0.0.1:5000/getDataByNo 接口，返回牙位信息渲染到前端
-
 * 设计arecord.js文件trend函数，请求http://127.0.0.1:5000/getReportByNo 接口。若未上传文件则弹窗显示，若有文件则下载文件(目前对文件下载路径上还未处理好)。
+* 暂时未用到getTokenBycheckNo接口。
 
 ### 3.设计“我的”->“医生简介”若干功能
 
@@ -35,13 +32,14 @@
 ### 4.设计医患聊天界面-患者端
 
 * user.js文件中chat_with函数，点击咨询后进入chatting界面。
-
 * chatting.js文件中onLoad函数加载时，请求http://127.0.0.1:5000/getChatById 接口，请求该医患的聊天记录并渲染到前端。
-* chatting.js文件中sendClick函数，发送消息的时候，把消息显示到前端，并请求http://127.0.0.1:5000/addChatById 接口，将该聊天记录添加到后台。
+* chatting.js文件中sendClick函数，发送消息的时候，把消息显示到前端，并请求http://127.0.0.1:5000/addChatById 接口，将该聊天记录添加到后台csv文件。
 
+### 5.设计医患聊天界面-医生端
 
-
-
+* patient-data.js文件中get_data函数，点击咨询后进入chatting_doctor界面。
+* chatting_doctor.js文件中onLoad函数加载时，请求http://127.0.0.1:5000/getChatById 接口，请求该医患的聊天记录并渲染到前端。
+* chatting_doctor.js文件中sendClick函数，发送消息的时候，把消息显示到前端，并请求http://127.0.0.1:5000/addChatById 接口，将该聊天记录添加到后台csv文件。
 
 
 

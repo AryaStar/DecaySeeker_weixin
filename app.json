@@ -19,6 +19,7 @@
     "pages/choose_base/choose_base",
     "pages/arecord/arecord",
     "pages/chatting/chatting",
+    "pages/chatting_doctor/chatting_doctor",
     "pages/shop/shop"
   ],
 

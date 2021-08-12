@@ -56,7 +56,7 @@ Page({
 //       patient_id: '1',//一开始病人id写死为1
 //       doctor_id:'1',
 //       // doctor_id: app.globalData.doctorid_now //这是全局变量，点击某医生的时候设定
-//       sender: 'patient',
+//       sender: 'doctor',
 //       content: inputVal,
 //     },
 //     header: {
@@ -142,8 +142,8 @@ Page({
    var myinput=e.detail.value
    var that = this
     msgList.push({
-   sender: 'patient',
-   receiver:'doctor',
+   sender: 'doctor',
+   receiver:'patient',
    timestamp:'',
    content: e.detail.value
   })
@@ -153,7 +153,7 @@ Page({
       patient_id: '1',//一开始病人id写死为1
       doctor_id:'1',
       // doctor_id: app.globalData.doctorid_now //这是全局变量，点击某医生的时候设定
-      sender: 'patient',
+      sender: 'doctor',
       content: myinput,
     },
     header: {

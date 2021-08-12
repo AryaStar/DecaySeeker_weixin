@@ -50,69 +50,73 @@ number:[],
 getData:function(e){
     var num=e.target.dataset.text
     console.log(num)
-    if (num == 'A'){
-      wx.showModal({
-        title: "提示",
-        content: "该患者17牙的牙合面龋风险为4级，26牙舌面龋风险为2级。"
-      })
-    }
-    else if(num == 'B'){
-      wx.showModal({
-        title: "提示",
-        content: "该患者11牙的近中面龋风险为5级，45牙合面龋风险为1级。"
-      })
-    }
-    else if(num == 'C'){
-      wx.showModal({
-        title: "提示",
-        content: "该患者39牙的远中面龋风险为3级。"
-      })
-    }
-    else if(num == 'D'){
-      wx.showModal({
-        title: "提示",
-        content: "该患者71牙舌面龋风险为1级，42牙的近中面龋风险为2级。"
-      })
-    }
-    this.setData({
-      realname: e.target.dataset.text
-    })
-  var realname = this.data.realname
-  var that = this
-  db.collection('users').where({
-    realname: realname,
-    identity:'患者'
-  })
-    .get({
-      success: res => {
-        console.log(res.data[0]._id)
-        this.setData({
-          "ph": res.data[0].ph,
-          'date': res.data[0].date,
-          "ph1": res.data[0].ph1,
-          'date1': res.data[0].date1,
-          "ph2": res.data[0].ph2,
-          'date2': res.data[0].date2,
-          'number':res.data[0].number,
-          'number1': res.data[0].number1,
-          'number2': res.data[0].number2,
-        })
-        app.globalData.ph= this.data.ph
-        app.globalData.date = this.data.date
-        app.globalData.number = this.data.number
-        app.globalData.ph1 = this.data.ph1
-        app.globalData.date1 = this.data.date1
-        app.globalData.number1 = this.data.number1
-        app.globalData.ph2 = this.data.ph2
-        app.globalData.date2= this.data.date2
-        app.globalData.number2 = this.data.number2
-        console.log(app.globalData.number2)
-        wx.navigateTo({
-          url: '/pages/trends/trends',
-        })
-      }
+    wx.navigateTo({
+      url: '/pages/chatting_doctor/chatting_doctor'//+value,
     })
 
+
+  //   if (num == 'A'){
+  //     wx.showModal({
+  //       title: "提示",
+  //       content: "该患者17牙的牙合面龋风险为4级，26牙舌面龋风险为2级。"
+  //     })
+  //   }
+  //   else if(num == 'B'){
+  //     wx.showModal({
+  //       title: "提示",
+  //       content: "该患者11牙的近中面龋风险为5级，45牙合面龋风险为1级。"
+  //     })
+  //   }
+  //   else if(num == 'C'){
+  //     wx.showModal({
+  //       title: "提示",
+  //       content: "该患者39牙的远中面龋风险为3级。"
+  //     })
+  //   }
+  //   else if(num == 'D'){
+  //     wx.showModal({
+  //       title: "提示",
+  //       content: "该患者71牙舌面龋风险为1级，42牙的近中面龋风险为2级。"
+  //     })
+  //   }
+  //   this.setData({
+  //     realname: e.target.dataset.text
+  //   })
+  // var realname = this.data.realname
+  // var that = this
+  // db.collection('users').where({
+  //   realname: realname,
+  //   identity:'患者'
+  // })
+  //   .get({
+  //     success: res => {
+  //       console.log(res.data[0]._id)
+  //       this.setData({
+  //         "ph": res.data[0].ph,
+  //         'date': res.data[0].date,
+  //         "ph1": res.data[0].ph1,
+  //         'date1': res.data[0].date1,
+  //         "ph2": res.data[0].ph2,
+  //         'date2': res.data[0].date2,
+  //         'number':res.data[0].number,
+  //         'number1': res.data[0].number1,
+  //         'number2': res.data[0].number2,
+  //       })
+  //       app.globalData.ph= this.data.ph
+  //       app.globalData.date = this.data.date
+  //       app.globalData.number = this.data.number
+  //       app.globalData.ph1 = this.data.ph1
+  //       app.globalData.date1 = this.data.date1
+  //       app.globalData.number1 = this.data.number1
+  //       app.globalData.ph2 = this.data.ph2
+  //       app.globalData.date2= this.data.date2
+  //       app.globalData.number2 = this.data.number2
+  //       console.log(app.globalData.number2)
+  //       wx.navigateTo({
+  //         url: '/pages/trends/trends',
+  //       })
+  //     }
+  //   })
 },
 
 
