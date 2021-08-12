@@ -1,13 +1,17 @@
 // pages/shop/shop.js
 var app = getApp();
 
+// pages/project2/project2.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-
+   
+    imgUrls:['/images/乳牙.jpg','/images/恒牙.jpg'],
+    nav:['/images/shop.png','/images/健康牙齿.png','',''],
+    newUser:'',
+    song:['/images/健康牙齿.png','/images/back1.png','/images/back1.png','/images/back1.png']
   },
 
   /**
@@ -15,6 +19,20 @@ Page({
    */
   onLoad: function (options) {
     app.editTabBar1();
+    // wx.request({
+    //   url: 'https://www.easy-mock.com/mock/5ceb9351d910de59a72e0ba7/example/list',
+    //   success:(res)=>{
+    //     // console.log(res.data.song)
+    //     this.setData({
+    //       imgUrls: res.data.BannerList,
+    //       nav: res.data.iconList,
+    //       newUser:res.data.newUser,
+    //       song: res.data.song
+    //     })
+    //   }
+    // })
+// https://www.easy-mock.com/mock/5ceb9351d910de59a72e0ba7/example/banner
+//https://img02.hua.com/m/home/img/m_home_use_friend.png
   },
 
   /**

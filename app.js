@@ -132,7 +132,7 @@ App({
       {
         "pagePath": "/pages/shop/shop",////////////////////////////////////////////////////////////////////
         "text": "商店",
-        "iconPath": "/images/doctor.png",
+        "iconPath": "/images/shop.png",
         "selectedIconPath": "/images/信息.png",
         "selectedColor": "#13227a",
         "clas": "menu-item1",

@@ -1,3 +1,48 @@
 <!--pages/shop/shop.wxml-->
 <import src="/pages/template/tabbar.wxml" />
+
+<view class='wrap'>
+<swiper class='bann' indicator-dots="{{indicatorDots}}" indicator-dots='true'autoplay="true" interval="2000" duration="500" circular='true'>
+  <block wx:for="{{imgUrls}}" wx:key='index'>
+    <swiper-item class='banner' bindtap='banner'>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='lo'>
+  <view class='qi'>
+    <image class='dui' src='/images/tab6.jpg'></image>
+    <view></view>认证龙头企</view>
+  <view class='qi'>
+    <image class='dui' src='/images/tab6.jpg'></image>
+    <view></view>国际品牌</view>
+  <view class='qi'>
+    <image class='dui' src='/images/tab6.jpg'></image>
+    <view></view>全面认证</view>
+  <view class='qi'>
+    <image class='dui' src='/images/tab6.jpg'></image>
+    <view></view>最近31675条</view>
+</view>
+
+<view class='nav'>
+  <view class='dl' wx:for='{{nav}}' wx:key='index' bindtap='flower'>
+    <image class='dd' src='/images/back1.png'></image>
+    <view class='dt'></view>
+  </view>
+</view>
+
+<image class='newUser' src='/images/健康牙齿.png'></image>
+
+<view class='select'><view class='sele'>医疗器械</view></view>
+
+
+<view class='song'>
+<view class='song-item' wx:for='{{song}}' wx:key='index'>
+   <image class='song-img' src='{{item}}'></image>
+    <view class='song-context'>{{item.id}}</view>
+</view>
+</view>
+</view>
+
 <template is="tabBar" data="{{tabBar}}" />

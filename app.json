@@ -8,6 +8,7 @@
     "pages/patient/patient",
     "pages/doctor/doctor",
     "pages/choose/choose",
+    "pages/shop/shop",
     "pages/patient-my/patient-my",
     "pages/trends/trends",
     "pages/trend/trend",
@@ -19,8 +20,8 @@
     "pages/choose_base/choose_base",
     "pages/arecord/arecord",
     "pages/chatting/chatting",
-    "pages/chatting_doctor/chatting_doctor",
-    "pages/shop/shop"
+    "pages/chatting_doctor/chatting_doctor"
+
   ],
 
   "window": {
