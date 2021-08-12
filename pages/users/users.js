@@ -16,7 +16,6 @@ Page({
   },
 
   
-
   chat_with: function (e) {
     // let value= e.currentTarget.dataset.value
     // console.log(value)
@@ -24,6 +23,13 @@ Page({
       url: '../chatting/chatting'//+value,
     })
   },
+
+  sign: function(e){
+    wx.showToast({
+      title: '向医院提起挂号申请',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

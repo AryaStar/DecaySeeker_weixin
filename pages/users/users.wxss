@@ -69,3 +69,20 @@ page{
   height:16rpx;
   background: white;
 }
+.left {
+  width: 30%;
+  margin-top: 80rpx;
+  margin-left: 100rpx;
+  float: left;
+  color: #283894;
+  background-color: rgba(150, 183, 245, 0.623);
+}
+
+.right {
+  width: 30%;
+  margin-top: 80rpx;
+  margin-right: 100rpx;
+  float: right;
+  color: #13227a;
+  background-color: rgba(150, 183, 245, 0.623)
+}
