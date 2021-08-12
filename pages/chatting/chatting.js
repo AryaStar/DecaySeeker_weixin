@@ -102,7 +102,10 @@ Page({
       msgList = mydata
       console.log(msgList)
     }
-  })
+  });
+  wx.pageScrollTo({
+    scrollTop: 1000
+})
  },
 
 
