@@ -31,9 +31,19 @@
 </view>
 
 
-<view class="pic">
+<!-- <view class="pic">
   <image src="{{pic}}" style="width: 80%"></image>
+</view> -->
+
+<!-- <video src="http://127.0.0.1:5000//getVideoByNo?record_no=1" binderror="" ></video> -->
+
+
+<view class="pic">
+	<video show-mute-btn="{{true}}" 
+	src="http://127.0.0.1:5000//getVideoByNo?record_no=1"
+	picture-in-picture-mode="{{['push', 'pop']}}" show-progress="{{true}}" autoplay="{{true}}" show-casting-button="{{true}}" show-fullscreen-btn="{{true}}" show-screen-lock-button="{{true}}" enable-auto-rotation="{{true}}" enable-progress-gesture="{{false}}" bindenterpictureinpicture='bindVideoEnterPictureInPicture' bindleavepictureinpicture='bindVideoLeavePictureInPicture' bindfullscreenchange="screenChange"></video>
 </view>
+
 
 <view>
   <button bindtap="trend" class="yuan" hover-class='hover' >生成报告</button>

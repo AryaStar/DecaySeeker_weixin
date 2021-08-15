@@ -161,6 +161,21 @@ Page({
     //     }
     //   })
   },
+
+  bindVideoEnterPictureInPicture() {
+    console.log('进入小窗模式')
+  },
+
+  bindVideoLeavePictureInPicture() {
+    console.log('退出小窗模式')
+  },
+
+  screenChange(res){
+    console.log("screenChange->res:" + JSON.stringify(res))
+  },
+
+
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
