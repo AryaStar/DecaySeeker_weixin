@@ -40,8 +40,8 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.9.5",
-  "appid": "wx7534f2b93a14ca38",
-  "projectname": "demo",
+  "appid": "wx8bc88a95d9c47bb5",
+  "projectname": "mywork",
   "debugOptions": {
     "hidedInDevtools": []
   },
@@ -51,6 +51,7 @@
     "servePath": ""
   },
   "isGameTourist": false,
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "search": {
       "list": []

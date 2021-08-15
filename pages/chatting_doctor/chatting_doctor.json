@@ -2,5 +2,5 @@
   "usingComponents": {
     "Select": "/Componet/select/select"
   },
-  "navigationBarTitleText": "医生咨询"
+  "navigationBarTitleText": "咨询"
 }

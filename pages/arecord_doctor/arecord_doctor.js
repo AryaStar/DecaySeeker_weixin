@@ -44,65 +44,13 @@ Page({
     var that = this
     var getid= that.data.record_no
     // console.log(getid+'haha')
-    wx.request({
-      url: 'http://1.15.106.25/getReportByNo',
-      data:{
-        record_no: getid
-      },
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success (res) {
-        var mydata = res.data.signal 
-        if(mydata == '200'){
-          that.show()
-          console.log(mydata)
-        }else{
-          console.log('http://1.15.106.25/getReportByNo?record_no='+getid)
-          wx.downloadFile({
-            url: 'http://1.15.106.25/getReportByNo?record_no='+getid, 
-            type: 'pdf',
-            header:{'Content-Type':'application/pdf'},
-            //仅为示例，并非真实的资源
-            success (res) {
-              // 只要服务器有响应数据，就会把响应内容写入文件并进入 success 回调，业务需要自行判断是否下载到了想要的内容
-              var filePath=res.tempFilePath
-              // var filePath='/download'
-              wx.saveFile({
-                tempFilePath: filePath,
-                // tempFilePath:filePath,
-                success: function(res){
-                  console.log('save pdf')
-                  var savedFilePath = res.savedFilePath
-                }
-              })
-              wx.openDocument({
-                filePath: filePath,
-                success:function(data){
-                  console.log('success!')
-                },
-                fail:function(data){
-                  console.log("fail!")
-                },
-                complete:function(data){
-                  console.log('complete!'),
-                  console.log(data)
-                }
-              })
-
-              }
-
-            }
-          )
-
-        }
-        
-      }
+    wx.navigateTo({
+      url: '../chatting_doctor/chatting_doctor'//+value,
     })
 
-   
-  
-  },
+              },
+
+      
 
   /**
    * 生命周期函数--监听页面加载
