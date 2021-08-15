@@ -16,7 +16,7 @@
 * choose_base.js文件onload函数加载时请求http://127.0.0.1:5000/getAllRecordsNoByUserId 接口并返回json数据以表格渲染到前端。
 * choose_base.js文件goto函数，实现点击“查看”跳转到arecord界面。
 * arecord.js文件onload函数加载时请求http://127.0.0.1:5000/getDataByNo 接口，返回牙位信息渲染到前端
-* 设计arecord.js文件trend函数，请求http://127.0.0.1:5000/getReportByNo 接口。若未上传文件则弹窗显示，若有文件则下载文件(目前对文件下载路径上还未处理好)。
+* 设计arecord.js文件trend函数，请求http://127.0.0.1:5000/getReportByNo 接口。若未上传文件则弹窗显示，若有文件则下载文件(目前对文件下载路径不知可以更改与否)。
 * 暂时未用到getTokenBycheckNo接口。
 
 ### 3.设计“我的”->“医生简介”若干功能
@@ -42,7 +42,7 @@
 * chatting_doctor.js文件中sendClick函数，发送消息的时候，把消息显示到前端，并请求http://127.0.0.1:5000/addChatById 接口，将该聊天记录添加到后台csv文件。
 
 ### 6.设计视频播放功能
-* arecord.wxml中，前端直接请求http://127.0.0.1:5000/getVideoByNo 接口，播放视频。
+* arecord.wxml中，前端直接请求http://127.0.0.1:5000/getVideoByNo?record_no=1 接口，播放视频。
 
 ### 7.设计商店界面
 

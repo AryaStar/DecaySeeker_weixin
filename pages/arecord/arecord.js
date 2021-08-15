@@ -58,19 +58,42 @@ Page({
           that.show()
           console.log(mydata)
         }else{
+          console.log('http://1.15.106.25/getReportByNo?record_no='+getid)
           wx.downloadFile({
-            url: 'http://1.15.106.25/getReportByNo?record_no'+getid, //仅为示例，并非真实的资源
-            filePath: '/download',
+            url: 'http://1.15.106.25/getReportByNo?record_no='+getid, 
+            type: 'pdf',
+            header:{'Content-Type':'application/pdf'},
+            //仅为示例，并非真实的资源
             success (res) {
               // 只要服务器有响应数据，就会把响应内容写入文件并进入 success 回调，业务需要自行判断是否下载到了想要的内容
-              console.log(res)
-              if (res.statusCode === 200) {
-                // var rr=res.tempFilePath;
-                console.log('haha')
+              var filePath=res.tempFilePath
+              // var filePath='/download'
+              wx.saveFile({
+                tempFilePath: filePath,
+                // tempFilePath:filePath,
+                success: function(res){
+                  console.log('save pdf')
+                  var savedFilePath = res.savedFilePath
+                }
+              })
+              wx.openDocument({
+                filePath: filePath,
+                success:function(data){
+                  console.log('success!')
+                },
+                fail:function(data){
+                  console.log("fail!")
+                },
+                complete:function(data){
+                  console.log('complete!'),
+                  console.log(data)
+                }
+              })
+
               }
 
             }
-          })
+          )
 
         }
         

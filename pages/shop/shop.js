@@ -8,7 +8,7 @@ Page({
    */
   data: {
    
-    imgUrls:['/images/乳牙.jpg','/images/p1.jpg','/images/恒牙.jpg'],
+    imgUrls:['/images/p1.jpg','/images/乳牙.jpg','/images/恒牙.jpg'],
     nav:['/images/shop.png','/images/健康牙齿.png','',''],
     newUser:'',
     song:['/images/p4.jpg','/images/p2.jpg','/images/p3.jpg']
