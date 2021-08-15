@@ -1,5 +1,6 @@
 <!--pages/shop/shop.wxml-->
 <import src="/pages/template/tabbar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />
 
 <view class='wrap'>
 <swiper class='bann' indicator-dots="{{indicatorDots}}" indicator-dots='true'autoplay="true" interval="2000" duration="500" circular='true'>
@@ -25,16 +26,16 @@
     <view></view>最近31675条</view>
 </view>
 
-<view class='nav'>
+<!-- <view class='nav'>
   <view class='dl' wx:for='{{nav}}' wx:key='index' bindtap='flower'>
-    <image class='dd' src='/images/back1.png'></image>
+    <image class='dd' src='{{item}}'></image>
     <view class='dt'></view>
   </view>
-</view>
+</view> -->
 
-<image class='newUser' src='/images/健康牙齿.png'></image>
+<image class='newUser' src='/images/p0.jpg'></image>
 
-<view class='select'><view class='sele'>医疗器械</view></view>
+<view class='select'><view class='sele'>医疗产品</view></view>
 
 
 <view class='song'>
@@ -43,6 +44,9 @@
     <view class='song-context'>{{item.id}}</view>
 </view>
 </view>
+
+
 </view>
 
-<template is="tabBar" data="{{tabBar}}" />
+
+

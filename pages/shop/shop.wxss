@@ -49,8 +49,10 @@ page{
   height: 60rpx;
 }
 .newUser{
-  width: 100%;
-  height: 200rpx;
+  width: 95%;
+  align-items: center;
+  height: 300rpx;
+  margin:auto;  
 }
 .select{
   width: 100%;
