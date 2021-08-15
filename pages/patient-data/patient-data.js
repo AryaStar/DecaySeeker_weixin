@@ -48,10 +48,11 @@ number:[],
   },
 
 getData:function(e){
-    var num=e.target.dataset.text
-    console.log(num)
+
+    let value= e.currentTarget.dataset.value
+    console.log(value)
     wx.navigateTo({
-      url: '/pages/chatting_doctor/chatting_doctor'//+value,
+      url: '/pages/arecord_doctor/arecord_doctor?id='+value,
     })
 
 

@@ -47,3 +47,7 @@
 ### 7.设计商店界面
 
 * 暂定为静态界面展示医疗器械图片
+
+### 8.设计医生端患者记录界面及功能
+* 在patient-data.js中getData函数将重定向到arecord_doctor页面，同时传入参数id
+* record_doctor.js中onload函数加载时请求http://1.15.106.25/getDataByNo 接口，获取患者牙位ph等数据
