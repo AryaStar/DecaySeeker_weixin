@@ -85,7 +85,7 @@ Page({
    cusHeadIcon: app.globalData.userInfo.defaultUrl,
   });
   wx.request({
-    url: 'http://127.0.0.1:5000/getChatById',
+    url: 'http://1.15.106.25/getChatById',
     data:{
       patient_id: '1',
       doctor_id:'1',
@@ -148,7 +148,7 @@ Page({
    content: e.detail.value
   })
   wx.request({
-    url: 'http://127.0.0.1:5000/addChatById',
+    url: 'http://1.15.106.25/addChatById',
     data:{
       patient_id: '1',//一开始病人id写死为1
       doctor_id:'1',

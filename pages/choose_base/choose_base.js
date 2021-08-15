@@ -88,7 +88,7 @@ Page({
     app.editTabBar1();
 
     wx.request({
-      url: 'http://127.0.0.1:5000/getAllRecordsNoByUserId',
+      url: 'http://1.15.106.25/getAllRecordsNoByUserId',
       data:{
         user_id: '1'
       },

@@ -45,7 +45,7 @@ Page({
     var getid= that.data.record_no
     // console.log(getid+'haha')
     wx.request({
-      url: 'http://127.0.0.1:5000/getReportByNo',
+      url: 'http://1.15.106.25/getReportByNo',
       data:{
         record_no: getid
       },
@@ -59,7 +59,7 @@ Page({
           console.log(mydata)
         }else{
           wx.downloadFile({
-            url: 'http://127.0.0.1:5000/getReportByNo?record_no'+getid, //仅为示例，并非真实的资源
+            url: 'http://1.15.106.25/getReportByNo?record_no'+getid, //仅为示例，并非真实的资源
             filePath: '/download',
             success (res) {
               // 只要服务器有响应数据，就会把响应内容写入文件并进入 success 回调，业务需要自行判断是否下载到了想要的内容
@@ -94,7 +94,7 @@ Page({
       })
       // console.log(that.data.record_no+'hihi')
       wx.request({
-        url: 'http://127.0.0.1:5000/getDataByNo',
+        url: 'http://1.15.106.25/getDataByNo',
         data:{
           record_no: getid
         },
