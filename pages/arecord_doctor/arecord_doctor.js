@@ -64,22 +64,22 @@ Page({
         record_no: getid
       })
       // console.log(that.data.record_no+'hihi')
-      wx.request({
-        url: 'http://1.15.106.25/getDataByNo',
-        data:{
-          record_no: getid
-        },
-        header: {
-          'content-type': 'application/json' // 默认值
-        },
-        success (res) {
-          let mydata = res.data.data
-          that.setData({
-            listData: mydata
-          })
-          console.log(mydata)
-        }
-      })
+      // wx.request({
+      //   url: 'http://1.15.106.25/getDataByNo',
+      //   data:{
+      //     record_no: getid
+      //   },
+      //   header: {
+      //     'content-type': 'application/json' // 默认值
+      //   },
+      //   success (res) {
+      //     let mydata = res.data.data
+      //     that.setData({
+      //       listData: mydata
+      //     })
+      //     console.log(mydata)
+      //   }
+      // })
 
         // db.collection('users').where({
     //   userId: wx.getStorageSync('userId')

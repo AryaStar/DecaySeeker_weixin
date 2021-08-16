@@ -87,8 +87,8 @@ Page({
   this.setData({
     // getid: getid,
     username: username,
-  userTx: userTx,
-   cusHeadIcon: app.globalData.userInfo.defaultUrl,
+    userTx: userTx,
+    cusHeadIcon: app.globalData.userInfo.defaultUrl,
   });
   wx.request({
     url: 'http://1.15.106.25/getChatById',

@@ -21,7 +21,7 @@ Page({
       mHidden: true
     })
     wx.showToast({
-      title: '已向医院申请挂号',
+      title: '向医院申请挂号',
     })
   },
   show: function () {
