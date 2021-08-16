@@ -45,11 +45,13 @@ Page({
     downHeight:''
   },
 
-//   test:function(){
-//     wx.navigateTo({
-//       url: '../chatting/chatting'
-//   })
-// },
+  test:function(e){
+    let value= e.currentTarget.dataset.value
+      console.log(value)
+    wx.navigateTo({
+      url: '../arecord/arecord?id='+value,
+    })
+},
 
 
   changeModel:function(){

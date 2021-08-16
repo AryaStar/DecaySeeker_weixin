@@ -43,65 +43,56 @@ Page({
   trend: function(e){
     var that = this
     var getid= that.data.record_no
-    // console.log(getid+'haha')
+    console.log(getid+'haha')
+
     wx.request({
       url: 'http://1.15.106.25/getReportByNo',
+      // url:'https://www.baidu.com',
+      method:'POST',
       data:{
         record_no: getid
       },
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
+      
       success (res) {
+        // console.log('alan')
         var mydata = res.data.signal 
         if(mydata == '200'){
           that.show()
-          console.log(mydata)
+          // console.log(mydata)
         }else{
           console.log('http://1.15.106.25/getReportByNo?record_no='+getid)
           wx.downloadFile({
-            url: 'http://1.15.106.25/getReportByNo?record_no='+getid, 
-            type: 'pdf',
-            header:{'Content-Type':'application/pdf'},
-            //仅为示例，并非真实的资源
-            success (res) {
-              // 只要服务器有响应数据，就会把响应内容写入文件并进入 success 回调，业务需要自行判断是否下载到了想要的内容
-              var filePath=res.tempFilePath
-              // var filePath='/download'
-              wx.saveFile({
-                tempFilePath: filePath,
-                // tempFilePath:filePath,
-                success: function(res){
-                  console.log('save pdf')
-                  var savedFilePath = res.savedFilePath
-                }
-              })
+            url: 'http://1.15.106.25/getReportByNo?record_no='+ getid,
+            header: {},
+            success: function (res) {
+              console.log(res)
+              var Path = res.tempFilePath              //返回的文件临时地址，用于后面打开本地预览所用
+              wx.showToast({
+                title: '正在打开',
+                icon: 'loading',
+                duration: 1000
+              });
               wx.openDocument({
-                filePath: filePath,
-                success:function(data){
-                  console.log('success!')
-                },
-                fail:function(data){
-                  console.log("fail!")
-                },
-                complete:function(data){
-                  console.log('complete!'),
-                  console.log(data)
+                filePath: Path,
+                showMenu:true,
+                success: function (resf) {
+                  console.log('打开文档成功')
+                  setTimeout(function(){wx.redirectTo({url: "/pages/arecord"})},1000)
                 }
               })
-
-              }
-
-            }
-          )
-
+            },
+            fail: function(res) {
+              console.log('文件下载失败');
+            },
+            complete: function(res) {},
+          })
         }
-        
+      },
+      fail()
+      {
+        console.log('sorry! bad network')   
       }
     })
-
-   
-  
   },
 
   /**
@@ -110,28 +101,28 @@ Page({
   onLoad: function (options) {
     var that = this
     app.editTabBar1();
-     let getid=options.id.toString()
-      // console.log(getid)
+     let getid=options.id//.toString()
+    //  console.log(getid+'hae')
       that.setData({
         record_no: getid
       })
       // console.log(that.data.record_no+'hihi')
-      wx.request({
-        url: 'http://1.15.106.25/getDataByNo',
-        data:{
-          record_no: getid
-        },
-        header: {
-          'content-type': 'application/json' // 默认值
-        },
-        success (res) {
-          let mydata = res.data.data
-          that.setData({
-            listData: mydata
-          })
-          console.log(mydata)
-        }
-      })
+      // wx.request({
+      //   url: 'http://1.15.106.25/getDataByNo',
+      //   data:{
+      //     record_no: getid
+      //   },
+      //   header: {
+      //     'content-type': 'application/json' // 默认值
+      //   },
+      //   success (res) {
+      //     let mydata = res.data.data
+      //     that.setData({
+      //       listData: mydata
+      //     })
+      //     console.log(mydata)
+      //   }
+      // })
 
         // db.collection('users').where({
     //   userId: wx.getStorageSync('userId')

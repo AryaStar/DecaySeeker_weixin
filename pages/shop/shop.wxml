@@ -20,7 +20,7 @@
   <view class="konghang"></view>
   <view class="recommend-container">
     <view class="all-title">
-      <text>医疗产品</text>
+      <text>医疗护理产品</text>
        <image src="/images/buttom.png"></image>
  </view> 
     <view class="recommend-content">
