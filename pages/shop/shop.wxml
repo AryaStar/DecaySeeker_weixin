@@ -28,7 +28,7 @@
         <image src="{{item.url}}" style="{{'height:'+windowWidth*0.45+ 'px'}}"/>
         <text class="image-describe">{{item.describe}}</text>
       </view>
-      <view class='test'>更多医疗商品推荐,即将推出</view>
+      <view class='test'>更多医疗商品推荐,即将上市</view>
     </view>
   </view>
 </view> 

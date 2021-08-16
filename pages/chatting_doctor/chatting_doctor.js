@@ -44,6 +44,7 @@ Page({
   * 页面的初始数据
   */
  data: {
+   getid:'',
   scrollHeight: '100vh',
   inputBottom: 0,
   msgList:[]
@@ -76,10 +77,15 @@ Page({
   */
  onLoad: function(options) {
   // initData(this);
+  let getid = options.getid
+ 
   let username = wx.getStorageSync('username'),
   userTx = wx.getStorageSync('avater')
   var that = this
+  app.globalData.doctorid_now = getid
+  console.log(app.globalData.doctorid_now+'hihi')
   this.setData({
+    // getid: getid,
     username: username,
   userTx: userTx,
    cusHeadIcon: app.globalData.userInfo.defaultUrl,
@@ -88,8 +94,8 @@ Page({
     url: 'http://1.15.106.25/getChatById',
     data:{
       patient_id: '1',
-      doctor_id:'1',
-      // doctor_id: app.globalData.doctorid_now
+      // doctor_id: getid,
+      doctor_id: app.globalData.doctorid_now
     },
     header: {
       'content-type': 'application/json' // 默认值
@@ -151,8 +157,7 @@ Page({
     url: 'http://1.15.106.25/addChatById',
     data:{
       patient_id: '1',//一开始病人id写死为1
-      doctor_id:'1',
-      // doctor_id: app.globalData.doctorid_now //这是全局变量，点击某医生的时候设定
+      doctor_id: app.globalData.doctorid_now, //这是全局变量，点击某医生的时候设定
       sender: 'doctor',
       content: myinput,
     },

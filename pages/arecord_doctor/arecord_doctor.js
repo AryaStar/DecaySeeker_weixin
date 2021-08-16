@@ -43,9 +43,9 @@ Page({
   trend: function(e){
     var that = this
     var getid= that.data.record_no
-    // console.log(getid+'haha')
+    console.log(getid+'haha')
     wx.navigateTo({
-      url: '../chatting_doctor/chatting_doctor'//+value,
+      url: '../chatting_doctor/chatting_doctor?getid='+getid,
     })
 
               },

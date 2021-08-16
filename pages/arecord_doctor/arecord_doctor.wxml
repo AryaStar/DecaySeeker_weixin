@@ -16,7 +16,7 @@
     <view class="th">voltage</view>
   </view>
 
- <block wx:for="{{listData}}" wx:key="index">
+ <!-- <block wx:for="{{listData}}" wx:key="index">
     <view class="tr" wx:if="{{index % 2 == 0}}">
       <view class="td">{{item.position}}</view>
       <view class="td">{{item.ph}}</view>
@@ -27,19 +27,20 @@
       <view class="td">{{item.ph}}</view>
       <view class="td">{{item.voltage}}</view>
     </view>
- </block>
-</view>
-
-
-<view class="pic">
-  <image src="{{pic}}" style="width: 80%"></image>
+ </block> -->
 </view> 
 
-<!-- <view class="pic">
+<view class="pic">
 	<video show-mute-btn="{{true}}" 
 	src="http://1.15.106.25/getVideoByNo?record_no=1"
 	picture-in-picture-mode="{{['push', 'pop']}}" show-progress="{{true}}" autoplay="{{true}}" show-casting-button="{{true}}" show-fullscreen-btn="{{true}}" show-screen-lock-button="{{true}}" enable-auto-rotation="{{true}}" enable-progress-gesture="{{false}}" bindenterpictureinpicture='bindVideoEnterPictureInPicture' bindleavepictureinpicture='bindVideoLeavePictureInPicture' bindfullscreenchange="screenChange"></video>
+</view>
+
+<!-- <view class="pic">
+  <image src="{{pic}}" style="width: 80%"></image>
 </view>  -->
+
+
 
 <view>
   <button bindtap="trend" class="yuan" hover-class='hover' >点击聊天</button>
