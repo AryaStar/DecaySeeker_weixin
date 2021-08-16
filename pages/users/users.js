@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    mHidden: true,
     trimg: '/images/tab6.jpg',
     pic:'',
     Hei: "",
@@ -15,7 +16,25 @@ Page({
     doctorid_now:'',
   },
 
-  
+  changeModel: function () {
+    this.setData({
+      mHidden: true
+    })
+    wx.showToast({
+      title: '已向医院申请挂号',
+    })
+  },
+  show: function () {
+    this.setData({
+      mHidden: false
+    })
+  },
+  modelCancel: function () {
+    this.setData({
+      mHidden: true
+    })
+  },
+
   chat_with: function (e) {
     // let value= e.currentTarget.dataset.value
     // console.log(value)
@@ -25,21 +44,9 @@ Page({
   },
 
   sign: function(e){
-    wx.showModal({
-      cancelColor: 'cancelColor',
-      title: '挂号申请',
-      content: '向医院挂号申请，患者前往医院就诊',
-      showCancel: true,//是否显示取消按钮
-      // cancelText:"否",//默认是“取消”
-      cancelColor:'skyblue',//取消文字的颜色
-      // confirmText:"是",//默认是“确定”
-      confirmColor: 'skyblue',//确定文字的颜色
-      success: function (res) {
-        wx.showToast({
-          title: '已提出挂号申请',
-        })
-      }
-    })
+    var that = this
+    that.show()
+
   },
 
   /**

@@ -1,52 +1,36 @@
 <!--pages/shop/shop.wxml-->
 <import src="/pages/template/tabbar.wxml" />
-<template is="tabBar" data="{{tabBar}}" />
 
-<view class='wrap'>
-<swiper class='bann' indicator-dots="{{indicatorDots}}" indicator-dots='true'autoplay="true" interval="2000" duration="500" circular='true'>
-  <block wx:for="{{imgUrls}}" wx:key='index'>
-    <swiper-item class='banner' bindtap='banner'>
-      <image src="{{item}}" class="slide-image" />
-    </swiper-item>
-  </block>
-</swiper>
 
-<view class='lo'>
-  <view class='qi'>
-    <image class='dui' src='/images/tab6.jpg'></image>
-    <view></view>认证龙头企</view>
-  <view class='qi'>
-    <image class='dui' src='/images/tab6.jpg'></image>
-    <view></view>国际品牌</view>
-  <view class='qi'>
-    <image class='dui' src='/images/tab6.jpg'></image>
-    <view></view>全面认证</view>
-  <view class='qi'>
-    <image class='dui' src='/images/tab6.jpg'></image>
-    <view></view>最近31675条</view>
-</view>
-
-<!-- <view class='nav'>
-  <view class='dl' wx:for='{{nav}}' wx:key='index' bindtap='flower'>
-    <image class='dd' src='{{item}}'></image>
-    <view class='dt'></view>
+ <view class="container">
+  <swiper
+      class="swiper-container"
+      autoplay="true"
+      indicator-dots="true"
+      indicator-color="#333"
+      indicator-active-color="#fff"
+      style="{{'height:'+windowWidth*(1080/1920)+'px'}}"
+      >
+      <block wx:for="{{swiperImages}}" wx:key="{{item.index}}">
+        <swiper-item>
+          <image src="{{item.url}}" class="swiper-image" mode="widthFix"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  <view class="konghang"></view>
+  <view class="recommend-container">
+    <view class="all-title">
+      <text>医疗产品</text>
+       <image src="/images/buttom.png"></image>
+ </view> 
+    <view class="recommend-content">
+      <view class="image-container" wx:for="{{recommendImages}}" wx:key="{{item.index}}" data-details="{{item}}" catchtap="commodDetails">
+        <image src="{{item.url}}" style="{{'height:'+windowWidth*0.45+ 'px'}}"/>
+        <text class="image-describe">{{item.describe}}</text>
+      </view>
+      <view class='test'>更多医疗商品推荐,即将推出</view>
+    </view>
   </view>
-</view> -->
+</view> 
 
-<image class='newUser' src='/images/p0.jpg'></image>
-
-<view class='select'><view class='sele'>医疗产品</view></view>
-
-
-<view class='song'>
-<view class='song-item' wx:for='{{song}}' wx:key='index'>
-   <image class='song-img' src='{{item}}'></image>
-    <view class='song-context'>{{item.id}}</view>
-</view>
-</view>
-
-
-</view>
-
-
-
+<template is="tabBar" data="{{tabBar}}" />

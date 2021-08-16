@@ -1,86 +1,41 @@
-// pages/shop/shop.js
-var app = getApp();
-
-// pages/project2/project2.js
+import indexData from '../../data/index.js'
+const app = getApp();
 Page({
-  /**
-   * 页面的初始数据
-   */
   data: {
-   
-    imgUrls:['/images/p11.jpg','/images/p1.jpg','/images/p12.jpg'],
-    nav:['/images/shop.png','/images/健康牙齿.png','',''],
-    newUser:'',
-    song:['/images/p4.jpg','/images/p2.jpg','/images/p3.jpg']
+    swiperImages: [],
+    recommendImages: [],
+    windowWidth: 0,
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    app.editTabBar1();
-    // wx.request({
-    //   url: 'https://www.easy-mock.com/mock/5ceb9351d910de59a72e0ba7/example/list',
-    //   success:(res)=>{
-    //     // console.log(res.data.song)
-    //     this.setData({
-    //       imgUrls: res.data.BannerList,
-    //       nav: res.data.iconList,
-    //       newUser:res.data.newUser,
-    //       song: res.data.song
-    //     })
-    //   }
+  commodDetails: function (params) {
+    var data = JSON.stringify(params.currentTarget.dataset.details)
+    wx.setStorage({
+      key: 'commodDetails',
+      data: data,
+    })
+    // wx.navigateTo({
+    //   url: '/pages/details/details',
     // })
-// https://www.easy-mock.com/mock/5ceb9351d910de59a72e0ba7/example/banner
-//https://img02.hua.com/m/home/img/m_home_use_friend.png
+    wx.showModal({
+      title: '提示',
+      content: '淘口令复制成功，请打开手机淘宝查看',
+      showCancel: false
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
+  onLoad: function() {
+    app.editTabBar1();
+    this.setData({
+      swiperImages: indexData.swiperImages,
+      recommendImages: indexData.recommendImages
+    })
+  },
   onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+    var windowWidth = wx.getSystemInfoSync().windowWidth
+    this.setData({
+      windowWidth: windowWidth
+    })
+    wx.setStorage({
+      key: 'windowWidth',
+      data: windowWidth,
+    })
   }
 })

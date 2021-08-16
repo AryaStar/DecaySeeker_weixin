@@ -2,6 +2,14 @@
 <image class="pic" style='height:{{Hei}}' bindload='imgH'  src="{{pic}}"></image>
 </view>  -->
 
+<view>
+  <modal title="提示"  confirm-text="确定" hidden="{{mHidden}}" bindconfirm="changeModel"
+    bindcancel="modelCancel">向医院挂号申请，患者前往医院就诊</modal>
+</view>
+
+
+
+
 <view class="content">
   <view class="top">
     <view class="top-tr">
