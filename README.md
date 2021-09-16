@@ -1,9 +1,15 @@
 # MothSeeker_WeiXin
 互联网+项目-探蛀的微信端代码
 
+![Image text](https://github.com/AryaStar/DecaySeeker_weixin/blob/main/ifolder/1.png)
+
+![Image text](https://github.com/AryaStar/DecaySeeker_weixin/blob/main/ifolder/2.png)
+
+![Image text](https://github.com/AryaStar/DecaySeeker_weixin/blob/main/ifolder/3.png)
+
 ### 0.环境搭建
 
-* 小程序连接服务器1.15.106.25:80。
+* 小程序连接服务器127.0.0.1:5000:80。
 * 微信端不支持http协议仅支持https，故需要在微信开发者工具中设置->项目设置中选择不校验合法域名，手机端调试也许开启调试模式。
 
 ### 1.改动“首页”的 “开始检测”功能
@@ -50,4 +56,4 @@
 
 ### 8.设计医生端患者记录界面及功能
 * 在patient-data.js中getData函数将重定向到arecord_doctor页面，同时传入参数id
-* record_doctor.js中onload函数加载时请求http://1.15.106.25/getDataByNo 接口，获取患者牙位ph等数据
+* record_doctor.js中onload函数加载时请求http://127.0.0.1:5000/getDataByNo 接口，获取患者牙位ph等数据
