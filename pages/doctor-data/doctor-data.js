@@ -19,7 +19,7 @@ listData:[],
   onLoad: function (options) {
     var that = this
     wx.request({
-      url: 'http://1.15.106.25/getAllDoctors',
+      url: 'http://127.0.0.1:5000/getAllDoctors',
       data:{
         // user_id: '1'
       },

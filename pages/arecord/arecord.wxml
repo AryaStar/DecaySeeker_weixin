@@ -37,7 +37,7 @@
 
 <view class="pic">
 	<video show-mute-btn="{{true}}" 
-	src="http://1.15.106.25/getVideoByNo?record_no=1"
+	src="http://127.0.0.1:5000/getVideoByNo?record_no=1"
 	picture-in-picture-mode="{{['push', 'pop']}}" show-progress="{{true}}" autoplay="{{true}}" show-casting-button="{{true}}" show-fullscreen-btn="{{true}}" show-screen-lock-button="{{true}}" enable-auto-rotation="{{true}}" enable-progress-gesture="{{false}}" bindenterpictureinpicture='bindVideoEnterPictureInPicture' bindleavepictureinpicture='bindVideoLeavePictureInPicture' bindfullscreenchange="screenChange"></video>
 </view>
 

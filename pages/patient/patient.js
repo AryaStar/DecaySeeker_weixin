@@ -70,7 +70,7 @@ Page({
     // })
 
     wx.request({
-      url: 'http://1.15.106.25/createNewRecordById',
+      url: 'http://127.0.0.1:5000/createNewRecordById',
       data:{
         user_id: '1'
       },

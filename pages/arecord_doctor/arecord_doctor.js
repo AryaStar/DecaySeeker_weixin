@@ -65,7 +65,7 @@ Page({
       })
       // console.log(that.data.record_no+'hihi')
       // wx.request({
-      //   url: 'http://1.15.106.25/getDataByNo',
+      //   url: 'http://127.0.0.1:5000/getDataByNo',
       //   data:{
       //     record_no: getid
       //   },

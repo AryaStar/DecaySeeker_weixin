@@ -57,7 +57,7 @@ Page({
     var doctorid_now = app.globalData.doctorid_now
     // console.log(doctorid_now+'haha');
     wx.request({
-      url: 'http://1.15.106.25/getDoctorById',
+      url: 'http://127.0.0.1:5000/getDoctorById',
       data: {
         doctor_id: doctorid_now,
       },

@@ -56,4 +56,13 @@
 
 ### 8.设计医生端患者记录界面及功能
 * 在patient-data.js中getData函数将重定向到arecord_doctor页面，同时传入参数id
+
 * record_doctor.js中onload函数加载时请求http://127.0.0.1:5000/getDataByNo 接口，获取患者牙位ph等数据
+
+  #### 本地D:\个人\互联网+\weixin_demo
+
+  
+
+  
+
+  

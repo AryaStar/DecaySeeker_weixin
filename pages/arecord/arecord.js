@@ -46,7 +46,7 @@ Page({
     console.log(getid+'haha')
 
     wx.request({
-      url: 'http://1.15.106.25/getReportByNo',
+      url: 'http://127.0.0.1:5000/getReportByNo',
       // url:'https://www.baidu.com',
       method:'POST',
       data:{
@@ -60,9 +60,9 @@ Page({
           that.show()
           // console.log(mydata)
         }else{
-          console.log('http://1.15.106.25/getReportByNo?record_no='+getid)
+          console.log('http://127.0.0.1:5000/getReportByNo?record_no='+getid)
           wx.downloadFile({
-            url: 'http://1.15.106.25/getReportByNo?record_no='+ getid,
+            url: 'http://127.0.0.1:5000/getReportByNo?record_no='+ getid,
             header: {},
             success: function (res) {
               console.log(res)
@@ -108,7 +108,7 @@ Page({
       })
       // console.log(that.data.record_no+'hihi')
       // wx.request({
-      //   url: 'http://1.15.106.25/getDataByNo',
+      //   url: 'http://127.0.0.1:5000/getDataByNo',
       //   data:{
       //     record_no: getid
       //   },
