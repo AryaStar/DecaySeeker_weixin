@@ -1,5 +1,5 @@
 # MothSeeker_WeiXin
-互联网+项目-探蛀的微信端代码，服务端代码详见https://github.com/WhileBug/DecaySeeker_server
+互联网+项目-探蛀的微信端代码，服务端代码仓库[DecaySeeker_server](https://github.com/WhileBug/DecaySeeker_server),
 
 ![Image text](https://github.com/AryaStar/DecaySeeker_weixin/blob/main/ifolder/1.png)
 
